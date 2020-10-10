@@ -1,22 +1,20 @@
 package com.lnk.bean;
 
-public class FuncInfo {
+import org.antlr.v4.runtime.tree.ParseTree;
 
+import java.util.ArrayList;
+
+
+public class FuncInfo {
     private String path;
     private String file;
     private String funcDefName;
     private int startLine;
     private int endLine;
+    private ParseTree funcInfoTree = null; // 该函数所在行的tree
+    private ArrayList<String> paramList = new ArrayList<>(); // 该函数的形参
 
     public FuncInfo() {
-    }
-
-    public FuncInfo(String path, String file, String funcDefName, int startLine, int endLine) {
-        this.path = path;
-        this.file = file;
-        this.funcDefName = funcDefName;
-        this.startLine = startLine;
-        this.endLine = endLine;
     }
 
     public String getPath() {
@@ -59,6 +57,13 @@ public class FuncInfo {
         this.endLine = endLine;
     }
 
+    public ParseTree getFuncInfoTree() {
+        return funcInfoTree;
+    }
+
+    public void setFuncInfoTree(ParseTree funcInfoTree) {
+        this.funcInfoTree = funcInfoTree;
+    }
 
     @Override
     public String toString() {
@@ -68,6 +73,7 @@ public class FuncInfo {
         res += funcDefName + ",";
         res += startLine + ",";
         res += endLine + ",";
+        res += "\n";
         return res;
     }
 }
