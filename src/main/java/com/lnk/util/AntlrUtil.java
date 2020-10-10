@@ -1,5 +1,8 @@
 package com.lnk.util;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.lnk.bean.FuncInfo;
 import com.lnk.bean.FileInfo;
 import com.lnk.error_recovers.ErrorListenerSimple;
@@ -10,14 +13,15 @@ import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
+import java.io.*;
+import java.util.ArrayList;
+
 /**
  * Antlr工具类
  */
 @SuppressWarnings("Duplicates")
 public class AntlrUtil {
-
     /**
-     * 解析单个文件
      * @param filePath      文件路径
      * @param fileInfo   项目根目录和输出文件
      */
@@ -28,8 +32,6 @@ public class AntlrUtil {
             Parser parser = new CPP14Parser(commonTokenStream);
             ParseTree parseTree = null;
             parseTree = ((CPP14Parser)parser).translationUnit();
-
-
             ParseTreeWalker walker = new ParseTreeWalker();
             FuncInfo funcInfo = new FuncInfo();
             funcInfo.setPath(filePath);
@@ -45,5 +47,6 @@ public class AntlrUtil {
             e.printStackTrace();
         }
     }
+
 }
 

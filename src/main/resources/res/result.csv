@@ -1,81 +1,42 @@
 path,file,funcName,startLine,endLine
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,WiFiEventHandlerOpaque,62,65,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,operator(),67,72,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,canExpire,74,77,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,ESP8266WiFiGenericClass,89,92,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onEvent,94,101,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onStationModeConnected,103,115,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onStationModeDisconnected,117,129,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onStationModeAuthModeChanged,131,142,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onStationModeGotIP,144,156,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onStationModeDHCPTimeout,158,166,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onSoftAPModeStationConnected,168,179,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onSoftAPModeStationDisconnected,181,192,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onSoftAPModeProbeRequestReceived,194,205,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,onWiFiModeChange,207,215,
 
 D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,_eventCallback,221,251,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,channel,257,259,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,setSleepMode,266,339,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getSleepMode,345,347,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,setPhyMode,354,356,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getPhyMode,362,364,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,setOutputPower,370,380,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,persistent,387,389,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getPersistent,395,397,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,mode,403,463,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getMode,469,471,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,enableSTA,478,490,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,enableAP,497,511,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,forceSleepBegin,519,545,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,forceSleepWake,551,565,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getListenInterval,571,577,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,isSleepLevelMax,583,589,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,hostByName,607,610,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,hostByName,613,650,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,hostByName,653,700,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,wifi_dns_found_callback,709,719,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,shutdownCRC,721,724,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,shutdownValidCRC,726,729,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,shutdown,731,787,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,resumeFromShutdown,789,850,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,preinitWiFiOff,853,873,
 

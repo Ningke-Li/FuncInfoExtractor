@@ -2,14 +2,10 @@ package com.lnk;
 
 import com.lnk.bean.FileInfo;
 import com.lnk.util.*;
-import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.CommonTokenStream;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.util.Arrays;
-import java.util.List;
+import org.antlr.v4.runtime.*;
+import com.alibaba.fastjson.*;
+import java.io.*;
+import java.util.*;
 
 public class Main {
 

@@ -1,81 +1,67 @@
 path,file,funcName,startLine,endLine
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,62,65,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,67,72,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,74,77,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,89,92,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,94,101,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,103,115,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,117,129,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,131,142,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,144,156,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,158,166,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,168,179,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,181,192,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,194,205,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,207,215,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,221,251,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,_eventCallback,221,251,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,257,259,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,channel,257,259,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,266,339,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,setSleepMode,266,339,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,345,347,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getSleepMode,345,347,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,354,356,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,setPhyMode,354,356,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,362,364,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getPhyMode,362,364,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,370,380,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,setOutputPower,370,380,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,387,389,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,persistent,387,389,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,395,397,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getPersistent,395,397,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,403,463,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,mode,403,463,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,469,471,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getMode,469,471,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,478,490,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,enableSTA,478,490,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,497,511,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,enableAP,497,511,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,519,545,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,forceSleepBegin,519,545,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,551,565,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,forceSleepWake,551,565,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,571,577,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,getListenInterval,571,577,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,583,589,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,isSleepLevelMax,583,589,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,607,610,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,hostByName,607,610,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,613,650,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,hostByName,613,650,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,653,700,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,hostByName,653,700,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,709,719,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,wifi_dns_found_callback,709,719,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,721,724,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,shutdownCRC,721,724,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,726,729,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,shutdownValidCRC,726,729,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,731,787,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,shutdown,731,787,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,789,850,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,resumeFromShutdown,789,850,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,com.lnk.cppparser.CPP14Parser.FunctionDefinitionContext,853,873,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,preinitWiFiOff,853,873,
 

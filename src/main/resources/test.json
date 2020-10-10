@@ -1,0 +1,21 @@
+{
+  "file_modify": [
+    {
+      "new_path": "libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp",
+      "old_path": "libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp",
+      "del_lines": [],
+      "removed": 0,
+      "add_lines": [
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240
+      ]
+    }]
+}
