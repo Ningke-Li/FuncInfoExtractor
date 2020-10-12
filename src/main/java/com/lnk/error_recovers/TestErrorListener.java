@@ -28,7 +28,7 @@ public class TestErrorListener extends BaseErrorListener {
 
         private String errorLineTitle = null;
         private String errorLineString = null;
-        private String errorLineflag = null;
+        private String errorLineFlag = null;
 
         public String getErrorLineTitle() {
             return errorLineTitle;
@@ -46,12 +46,12 @@ public class TestErrorListener extends BaseErrorListener {
             this.errorLineString = errorLineString;
         }
 
-        public String getErrorLineflag() {
-            return errorLineflag;
+        public String getErrorLineFlag() {
+            return errorLineFlag;
         }
 
-        public void setErrorLineflag(String errorLineflag) {
-            this.errorLineflag = errorLineflag;
+        public void setErrorLineFlag(String errorLineFlag) {
+            this.errorLineFlag = errorLineFlag;
         }
     }
     private boolean errorOccurred = false;
@@ -90,7 +90,7 @@ public class TestErrorListener extends BaseErrorListener {
         if ( start>=0 && stop>=0 ) {
             for (int i=start; i<=stop; i++) errFlg.append("^");
         }
-        errorLineBean.setErrorLineflag(errFlg.toString());
+        errorLineBean.setErrorLineFlag(errFlg.toString());
         errorLineBeans.add(errorLineBean);
 //        System.err.println();
     }

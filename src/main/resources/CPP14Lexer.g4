@@ -401,7 +401,7 @@ UserDefinedFloatingLiteral:
 UserDefinedStringLiteral: StringLiteral Udsuffix;
 UserDefinedCharacterLiteral: CharacterLiteral Udsuffix;
 fragment Udsuffix: Identifier;
-Whitespace: [ \t]+ -> skip;
+Whitespace: ( ' ' | '\t' | '\r' | '\n')+ -> skip;
 Newline: ('\r' '\n'? | '\n') -> skip;
 BlockComment: '/*' .*? '*/' -> skip;
 LineComment: '//' ~ [\r\n]* -> skip;

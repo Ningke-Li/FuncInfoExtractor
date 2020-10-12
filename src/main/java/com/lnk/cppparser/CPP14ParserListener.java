@@ -57,12 +57,12 @@ public interface CPP14ParserListener extends ParseTreeListener {
 	 */
 	void exitQualifiedId(CPP14Parser.QualifiedIdContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CPP14Parser#nestedNameSpecifier()}.
+	 * Enter a parse tree produced by {@link CPP14Parser#nestedNameSpecifier}.
 	 * @param ctx the parse tree
 	 */
 	void enterNestedNameSpecifier(CPP14Parser.NestedNameSpecifierContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CPP14Parser#nestedNameSpecifier()}.
+	 * Exit a parse tree produced by {@link CPP14Parser#nestedNameSpecifier}.
 	 * @param ctx the parse tree
 	 */
 	void exitNestedNameSpecifier(CPP14Parser.NestedNameSpecifierContext ctx);
@@ -157,12 +157,12 @@ public interface CPP14ParserListener extends ParseTreeListener {
 	 */
 	void exitLambdaDeclarator(CPP14Parser.LambdaDeclaratorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CPP14Parser#postfixExpression()}.
+	 * Enter a parse tree produced by {@link CPP14Parser#postfixExpression}.
 	 * @param ctx the parse tree
 	 */
 	void enterPostfixExpression(CPP14Parser.PostfixExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CPP14Parser#postfixExpression()}.
+	 * Exit a parse tree produced by {@link CPP14Parser#postfixExpression}.
 	 * @param ctx the parse tree
 	 */
 	void exitPostfixExpression(CPP14Parser.PostfixExpressionContext ctx);
@@ -257,12 +257,12 @@ public interface CPP14ParserListener extends ParseTreeListener {
 	 */
 	void exitNewDeclarator(CPP14Parser.NewDeclaratorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CPP14Parser#noPointerNewDeclarator()}.
+	 * Enter a parse tree produced by {@link CPP14Parser#noPointerNewDeclarator}.
 	 * @param ctx the parse tree
 	 */
 	void enterNoPointerNewDeclarator(CPP14Parser.NoPointerNewDeclaratorContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CPP14Parser#noPointerNewDeclarator()}.
+	 * Exit a parse tree produced by {@link CPP14Parser#noPointerNewDeclarator}.
 	 * @param ctx the parse tree
 	 */
 	void exitNoPointerNewDeclarator(CPP14Parser.NoPointerNewDeclaratorContext ctx);
@@ -1137,12 +1137,12 @@ public interface CPP14ParserListener extends ParseTreeListener {
 	 */
 	void exitPointerDeclarator(CPP14Parser.PointerDeclaratorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CPP14Parser#noPointerDeclarator()}.
+	 * Enter a parse tree produced by {@link CPP14Parser#noPointerDeclarator}.
 	 * @param ctx the parse tree
 	 */
 	void enterNoPointerDeclarator(CPP14Parser.NoPointerDeclaratorContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CPP14Parser#noPointerDeclarator()}.
+	 * Exit a parse tree produced by {@link CPP14Parser#noPointerDeclarator}.
 	 * @param ctx the parse tree
 	 */
 	void exitNoPointerDeclarator(CPP14Parser.NoPointerDeclaratorContext ctx);
@@ -1247,12 +1247,12 @@ public interface CPP14ParserListener extends ParseTreeListener {
 	 */
 	void exitPointerAbstractDeclarator(CPP14Parser.PointerAbstractDeclaratorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CPP14Parser#noPointerAbstractDeclarator()}.
+	 * Enter a parse tree produced by {@link CPP14Parser#noPointerAbstractDeclarator}.
 	 * @param ctx the parse tree
 	 */
 	void enterNoPointerAbstractDeclarator(CPP14Parser.NoPointerAbstractDeclaratorContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CPP14Parser#noPointerAbstractDeclarator()}.
+	 * Exit a parse tree produced by {@link CPP14Parser#noPointerAbstractDeclarator}.
 	 * @param ctx the parse tree
 	 */
 	void exitNoPointerAbstractDeclarator(CPP14Parser.NoPointerAbstractDeclaratorContext ctx);
@@ -1267,12 +1267,12 @@ public interface CPP14ParserListener extends ParseTreeListener {
 	 */
 	void exitAbstractPackDeclarator(CPP14Parser.AbstractPackDeclaratorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CPP14Parser#noPointerAbstractPackDeclarator()}.
+	 * Enter a parse tree produced by {@link CPP14Parser#noPointerAbstractPackDeclarator}.
 	 * @param ctx the parse tree
 	 */
 	void enterNoPointerAbstractPackDeclarator(CPP14Parser.NoPointerAbstractPackDeclaratorContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CPP14Parser#noPointerAbstractPackDeclarator()}.
+	 * Exit a parse tree produced by {@link CPP14Parser#noPointerAbstractPackDeclarator}.
 	 * @param ctx the parse tree
 	 */
 	void exitNoPointerAbstractPackDeclarator(CPP14Parser.NoPointerAbstractPackDeclaratorContext ctx);

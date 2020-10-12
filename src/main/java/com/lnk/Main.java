@@ -48,7 +48,7 @@ public class Main {
             writer.newLine();
             writer.flush();
             writer.close();
-            List<String> filesPath = FileUtil.listAllFiles(fileInfo.getInputPath(), new String[]{"c", "cpp"});
+            List<String> filesPath = FileUtil.listAllFiles(fileInfo.getInputPath(), new String[]{"c", "cpp", ".mm", ".cc"});
             for (String file: filesPath){
                 AntlrUtil.processFile(file, fileInfo);
             }

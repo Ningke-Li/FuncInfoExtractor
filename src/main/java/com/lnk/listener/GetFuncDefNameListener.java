@@ -1,7 +1,5 @@
 package com.lnk.listener;
-
-import com.lnk.cppparser.CPP14Parser;
-import com.lnk.cppparser.CPP14ParserBaseListener;
+import com.lnk.cppparser.*;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 

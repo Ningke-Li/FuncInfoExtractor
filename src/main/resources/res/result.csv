@@ -2,41 +2,10 @@ path,file,funcName,startLine,endLine
 
 
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,curl_easy_escape,81,133,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,Curl_urldecode,145,203,
 
-
-
-
-
-
-
-
-
-
-D:\IdeaProjects\cpptest\src\main\resources\testCode\ESP8266WiFiGeneric.cpp,ESP8266WiFiGeneric.cpp,_eventCallback,221,251,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,curl_easy_unescape,211,224,
 
 

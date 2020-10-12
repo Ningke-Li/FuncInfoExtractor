@@ -1,8 +1,5 @@
 package com.lnk.listener;
-
-import com.lnk.cppparser.CPP14Parser;
-import com.lnk.cppparser.CPP14ParserBaseListener;
-
+import com.lnk.cppparser.*;
 import java.util.ArrayList;
 
 public class GetFuncDefParamsListener extends CPP14ParserBaseListener {

@@ -1,23 +1,22 @@
 package com.lnk.error_recovers;
 
-import org.antlr.v4.runtime.BaseErrorListener;
-import org.antlr.v4.runtime.RecognitionException;
-import org.antlr.v4.runtime.Recognizer;
+import com.lnk.cppparser.CPP14Parser;
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.IntervalSet;
 
-public class ErrorListenerSimple extends BaseErrorListener {
-
-    private boolean errorOccurred = false;
-
-
+public class ErrorListenerSimple extends DefaultErrorStrategy {
 
     @Override
-    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e) {
-        this.errorOccurred = true;
-    }
-
-    public boolean isErrorOccurred() {
-        return errorOccurred;
+    public void recover(Parser recognizer, RecognitionException e) {
+        super.recover(recognizer, e);
+        CommonTokenStream tokens = (CommonTokenStream) recognizer.getTokenStream();
+        // verify current token is not EOF
+        if (tokens.LA(1) != CPP14Parser.EOF)
+        {// move to next token
+            tokens.consume();
+        }
     }
 }
+
 
 
