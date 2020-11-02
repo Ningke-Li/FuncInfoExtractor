@@ -7,8 +7,10 @@ import com.lnk.Main;
 import com.lnk.bean.FuncInfo;
 import com.lnk.cppparser.*;
 import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.Utils;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
+import org.antlr.v4.runtime.tree.Trees;
 
 import java.io.*;
 import java.lang.reflect.Array;
@@ -32,7 +34,6 @@ public class CPPListener extends CPP14ParserBaseListener {
         this.outputPath = outputPath;
     }
 
-
     @Override
     public void enterFunctionDefinition(CPP14Parser.FunctionDefinitionContext ctx) {
         try {
@@ -46,9 +47,7 @@ public class CPPListener extends CPP14ParserBaseListener {
             funcInfo.setEndLine(ctx.stop.getLine());
             funcInfo.setFuncDefName(this.currentTopName);
             BufferedWriter writer = new BufferedWriter(new FileWriter(outputPath, true));
-            if(getJsonInfo(funcInfo.getStartLine(),funcInfo.getEndLine())){
-                writer.write(funcInfo.toString());
-            }
+            writer.write(funcInfo.toString());
             writer.newLine();
             writer.flush();
             writer.close();

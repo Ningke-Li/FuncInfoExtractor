@@ -10,9 +10,9 @@ Literal:
 	| UserDefinedLiteral;
 
 MultiLineMacro:
-	'#' (~[\n]*? '\\' '\r'? '\n')+ ~ [\n]+ -> channel (HIDDEN);
+	'#' (~[\n]*? '\\' '\r'? '\n')+ ~ [\n]+ -> skip;
 
-Directive: '#' ~ [\n]* -> channel (HIDDEN);
+Directive: '#' ~ [\n]* -> skip;
 /*Keywords*/
 
 Alignas: 'alignas';

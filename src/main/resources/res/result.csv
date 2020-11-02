@@ -1,11 +1,47 @@
 path,file,funcName,startLine,endLine
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,should_apply_changes_for_rel,152,161,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,ensure_transaction,168,188,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,create_estate_for_relation,197,226,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,curl_easy_escape,81,133,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,slot_fill_defaults,235,286,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,Curl_urldecode,145,203,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,slot_store_error_callback,291,319,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,curl_easy_unescape,211,224,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,slot_store_data,326,427,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,slot_modify_data,441,543,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_begin,548,560,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_commit,567,604,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_origin,611,623,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_relation,633,640,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_type,648,655,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,GetRelationIdentityOrPK,662,673,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_insert,679,737,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_insert_internal,740,751,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,check_relation_updatable,757,784,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_update,791,880,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_update_internal,883,936,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_delete,943,1002,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_delete_internal,1005,1041,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,FindReplTupleInLocalRel,1050,1074,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_tuple_routing,1079,1303,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\worker.c,worker.c,apply_handle_truncate,1310,1388,
 

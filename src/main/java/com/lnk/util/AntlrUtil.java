@@ -1,8 +1,5 @@
 package com.lnk.util;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 import com.lnk.bean.FuncInfo;
 import com.lnk.bean.FileInfo;
 import com.lnk.error_recovers.*;
@@ -11,14 +8,38 @@ import com.lnk.cppparser.*;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
+import java.awt.*;
 import java.io.*;
-import java.util.ArrayList;
+import java.util.*;
+import java.util.List;
 
 /**
  * Antlr工具类
  */
 @SuppressWarnings("Duplicates")
 public class AntlrUtil {
+
+    public static String printSyntaxTree(Parser parser, ParseTree root) {
+        StringBuilder buf = new StringBuilder();
+        recursive(root, buf, 0, Arrays.asList(parser.getRuleNames()));
+        return buf.toString();
+    }
+
+    private static void recursive(ParseTree aRoot, StringBuilder buf, int offset, List<String> ruleNames) {
+        for (int i = 0; i < offset; i++) {
+            buf.append("  ");
+        }
+        buf.append(Trees.getNodeText(aRoot, ruleNames)).append("\n");
+        if (aRoot instanceof ParserRuleContext) {
+            ParserRuleContext prc = (ParserRuleContext) aRoot;
+            if (prc.children != null) {
+                for (ParseTree child : prc.children) {
+                    recursive(child, buf, offset + 1, ruleNames);
+                }
+            }
+        }
+    }
+
     /**
      * @param filePath      文件路径
      * @param fileInfo   项目根目录和输出文件
@@ -36,7 +57,12 @@ public class AntlrUtil {
             TestErrorListener testErrorListener=new TestErrorListener();
             parser.removeErrorListeners();
             parser.addErrorListener(testErrorListener);
-
+            //将json字符串写入到json文件中
+            FileWriter fw = new FileWriter(new File(System.getProperty("user.dir") +"\\src\\main\\resources\\jsonfile\\create.txt"));
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(printSyntaxTree(parser,parseTree));
+            bw.flush();
+            //bw.close();
             FuncInfo funcInfo = new FuncInfo();
             funcInfo.setPath(filePath);
             String os = System.getProperty("os.name");

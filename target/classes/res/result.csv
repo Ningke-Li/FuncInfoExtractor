@@ -1,38 +1,41 @@
 path,file,funcName,startLine,endLine
-D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,passwd_callback,147,165,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,_PG_init,111,117,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,rand_enough,176,179,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_connect,124,236,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,rand_enough,182,186,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_check_conninfo,241,254,
 
-D:\IdeaProjects\cpptest\src\main\resources\testCode\url.c,url.c,ossl_seed,189,277,
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_get_conninfo,260,303,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_get_senderinfo,308,326,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_identify_system,332,367,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_server_version,372,376,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_startstreaming,388,472,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_endstreaming,478,545,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_readtimelinehistoryfile,550,590,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_PQexec,605,649,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_PQgetResult,654,694,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_disconnect,699,706,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_receive,724,804,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_send,811,819,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_create_slot,826,886,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_get_backend_pid,891,895,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_processTuples,900,968,
 
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,libpqrcv_exec,975,1030,
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+D:\IdeaProjects\cpptest\src\main\resources\testCode\libpqwalreceiver.c,libpqwalreceiver.c,stringlist_to_identifierstr,1040,1067,
 
