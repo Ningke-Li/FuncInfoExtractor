@@ -1,0 +1,17 @@
+path,file,funcName,startLine,endLine
+D:\IdeaProjects\cpptest\src\main\resources\testCode\89-cpp\testcases\000\001\983\sql_injection_basic.cpp,sql_injection_basic.cpp,main,20,44,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\89-cpp\testcases\000\001\984\sql_injection_basic_good.cpp,sql_injection_basic_good.cpp,main,20,44,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\89-cpp\testcases\000\001\985\sql_injection_scope.cpp,sql_injection_scope.cpp,buildQuery,20,23,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\89-cpp\testcases\000\001\985\sql_injection_scope.cpp,sql_injection_scope.cpp,main,25,50,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\89-cpp\testcases\000\001\986\sql_injection_scope_good.cpp,sql_injection_scope_good.cpp,buildQuery,20,22,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\89-cpp\testcases\000\001\986\sql_injection_scope_good.cpp,sql_injection_scope_good.cpp,main,24,48,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\89-cpp\testcases\000\001\989\sql_injection_array.cpp,sql_injection_array.cpp,main,21,56,
+
+D:\IdeaProjects\cpptest\src\main\resources\testCode\89-cpp\testcases\000\001\990\sql_injection_array_good.cpp,sql_injection_array_good.cpp,main,22,55,
+

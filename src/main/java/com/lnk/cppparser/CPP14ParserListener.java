@@ -1886,4 +1886,14 @@ public interface CPP14ParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitTheOperator(CPP14Parser.TheOperatorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CPP14Parser#literal}.
+	 * @param ctx the parse tree
+	 */
+	void enterLiteral(CPP14Parser.LiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CPP14Parser#literal}.
+	 * @param ctx the parse tree
+	 */
+	void exitLiteral(CPP14Parser.LiteralContext ctx);
 }

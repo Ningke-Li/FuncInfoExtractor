@@ -1137,4 +1137,10 @@ public interface CPP14ParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitTheOperator(CPP14Parser.TheOperatorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CPP14Parser#literal}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLiteral(CPP14Parser.LiteralContext ctx);
 }

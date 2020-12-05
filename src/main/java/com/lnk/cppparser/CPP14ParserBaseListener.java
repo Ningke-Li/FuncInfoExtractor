@@ -2266,6 +2266,18 @@ public class CPP14ParserBaseListener implements CPP14ParserListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitTheOperator(CPP14Parser.TheOperatorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLiteral(CPP14Parser.LiteralContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLiteral(CPP14Parser.LiteralContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
