@@ -65,6 +65,14 @@ public class FuncInfo {
         this.funcInfoTree = funcInfoTree;
     }
 
+    public ArrayList<String> getParamList() {
+        return paramList;
+    }
+
+
+    public void setParamList(ArrayList<String> paramList) {
+        this.paramList = paramList;
+    }
     @Override
     public String toString() {
         String res = "";

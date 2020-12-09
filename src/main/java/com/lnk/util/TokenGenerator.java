@@ -1,13 +1,11 @@
 package com.lnk.util;
 
-
-import com.lnk.bean.FuncInfo;
-import com.lnk.bean.FileInfo;
+import com.lnk.listener.*;
+import com.lnk.bean.*;
 import com.lnk.error_recovers.*;
 import com.lnk.cppparser.*;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
-import com.lnk.listener.*;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
@@ -67,7 +65,29 @@ public class TokenGenerator {
         System.out.println("xml ok");
     }
 
+    private GetFuncStartEndListener preGenerate(String path) throws IOException {
+        CharStream input = CharStreams.fromFileName(path);
+        Lexer lexer = new CPP14Lexer(input);
+        CommonTokenStream commonTokenStream = new CommonTokenStream(lexer);
+        Parser parser = new CPP14Parser(commonTokenStream);
+
+        ParseTree parseTree = ((CPP14Parser) parser).translationUnit();
+        TestErrorListener testErrorListener=new TestErrorListener();
+        parser.removeErrorListeners();
+        parser.addErrorListener(testErrorListener);
+
+        GetFuncStartEndListener getFuncStartEndListener
+                = new GetFuncStartEndListener();// 只需要得到函数的tree
+
+        ParseTreeWalker walker = new ParseTreeWalker();
+        walker.walk(getFuncStartEndListener, parseTree);
+
+        return getFuncStartEndListener;
+    }
+
     private void processFile(String path, Boolean flags,String testcaseID) throws ClassNotFoundException, IOException, InvocationTargetException, IllegalAccessException {
+        GetFuncStartEndListener preProcessListener = preGenerate(path);
+        ArrayList<FuncInfo> funcBeans = preProcessListener.getFuncInfos();
         CharStream input = CharStreams.fromFileName(path);
         Lexer lexer = new CPP14Lexer(input);
         List<Token> list = (List<Token>) lexer.getAllTokens();
@@ -75,11 +95,12 @@ public class TokenGenerator {
         if(flags){
             buf.append("1 ");
         }else buf.append("0 ");
-        for(Token token : list){
-            if(token.getType()==9){
-            }else{
-                buf.append(token.getText());
-                buf.append(" ");
+        for(FuncInfo funcInfo1 : funcBeans){
+            for (Token token : list){
+                if(token.getLine()>= funcInfo1.getStartLine()&& token.getLine()<= funcInfo1.getEndLine()&&token.getType()!=9){
+                    buf.append(token.getText());
+                    buf.append(" ");
+                }
             }
         }
         buf.append("\n");
@@ -97,12 +118,11 @@ public class TokenGenerator {
      * str[0]:项目根目录
      * str[1]:结果文件输出路径
      */
-    /*public static void main(String[] args) throws Exception {
-        String CWEID = "862";
+    public static void main(String[] args) throws Exception {
+        String CWEID = "20";
         String basePath = "D:\\0x00\\sard_crawler\\dataset\\svf-related\\cwe\\CWE"+CWEID+"\\source-code\\";
-        String outputPath = "D:\\0x00\\sard_crawler\\dataset\\svf-related\\cwe\\CWE"+CWEID+"\\token-raw.txt";
+        String outputPath = "D:\\0x00\\sard_crawler\\dataset\\svf-related\\token-raw\\CWE"+CWEID+"\\CWE"+CWEID+".txt";
 
         new TokenGenerator(basePath, outputPath).start();
     }
-    */
 }

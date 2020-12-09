@@ -25,7 +25,12 @@ public class GetFuncDefNameListener extends CPP14ParserBaseListener {
     GetFuncDefParamsListener getFuncDefParams = new GetFuncDefParamsListener();
     walker.walk(getFuncDefParams,ctx.parent);
   }
+
   public String getFuncDefName(){
     return this.funcDefName;
+  }
+
+  public ArrayList<String> getParamList() {
+    return paramList;
   }
 }

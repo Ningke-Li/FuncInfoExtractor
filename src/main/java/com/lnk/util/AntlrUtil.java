@@ -46,32 +46,23 @@ public class AntlrUtil {
      */
     public static void processFile(String filePath, FileInfo fileInfo) {
         try {
-            CharStream input = CharStreams.fromFileName(filePath);
-            Lexer lexer = new CPP14Lexer(input);
+            Lexer lexer = new CPP14Lexer(CharStreams.fromFileName(filePath));
             CommonTokenStream commonTokenStream = new CommonTokenStream(lexer);
             Parser parser = new CPP14Parser(commonTokenStream);
-
             ParseTree parseTree = null;
-            parseTree = ((CPP14Parser) parser).translationUnit();
+            parseTree = ((CPP14Parser)parser).translationUnit();
+
+
             ParseTreeWalker walker = new ParseTreeWalker();
-            TestErrorListener testErrorListener=new TestErrorListener();
-            parser.removeErrorListeners();
-            parser.addErrorListener(testErrorListener);
-            //将json字符串写入到json文件中
-            FileWriter fw = new FileWriter(new File(System.getProperty("user.dir") +"\\src\\main\\resources\\jsonfile\\create.txt"));
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(printSyntaxTree(parser,parseTree));
-            bw.flush();
-            //bw.close();
             FuncInfo funcInfo = new FuncInfo();
             funcInfo.setPath(filePath);
             String os = System.getProperty("os.name");
-            if (os.toLowerCase().contains("windows")) {
+            if (os.toLowerCase().contains("windows")){
                 funcInfo.setFile(filePath.substring(filePath.lastIndexOf("\\") + 1));
-            } else {
+            }else{
                 funcInfo.setFile(filePath.substring(filePath.lastIndexOf("/") + 1));
             }
-            ParseTreeListener parseTreeListener = new CPPListener(funcInfo, fileInfo.getOutputPath());
+            ParseTreeListener parseTreeListener =new GetFuncStartEndListener();
             walker.walk(parseTreeListener, parseTree);
         }catch (Exception e){
             e.printStackTrace();

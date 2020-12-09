@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cwe-funcInfo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/main/resources/res/cwe-funcInfo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
