@@ -41,23 +41,22 @@ public class TokenGenerator {
             String testcaseID = ele.attributeValue("id");
             for (Element f : fileList) {
                 String filePath = f.attributeValue("path");
+                ArrayList<Integer> flawLines = new ArrayList<Integer>();
                 if(filePath.contains(".c")||filePath.contains(".cpp")||filePath.contains(".mm")||filePath.contains(".cc")){
-                    Boolean flags = false;
-                    List<Element> mixedList = f.elements("mixed");
-                    List<Element> flawList = f.elements("flaw");
                     if (!filePath.contains("/testcases/shared/") && !filePath.contains("/testcases/app/")) {
+                        List<Element> mixedList = f.elements("mixed");
+                        List<Element> flawList = f.elements("flaw");
                         for (Element line : flawList) {
-                            if (line.attributeValue("line")!=null)
-                                flags=true;
+                            flawLines.add(Integer.parseInt(line.attributeValue("line")));
                         }
                         for (Element line : mixedList) {
-                            if(line.attributeValue("line")!=null);
-                            flags=true;
+                            flawLines.add(Integer.parseInt(line.attributeValue("line")));
                         }
+                        //System.out.println(flawLines);
                         StringBuilder stringBuilder = new StringBuilder();
                         stringBuilder.append(this.basePath).append(filePath);
                         String path = stringBuilder.toString();
-                        this.processFile(path,flags,testcaseID);
+                        this.processFile(path,flawLines,testcaseID);
                     }
                 }
             }
@@ -77,7 +76,7 @@ public class TokenGenerator {
         parser.addErrorListener(testErrorListener);
 
         GetFuncStartEndListener getFuncStartEndListener
-                = new GetFuncStartEndListener();// 只需要得到函数的tree
+                = new GetFuncStartEndListener();
 
         ParseTreeWalker walker = new ParseTreeWalker();
         walker.walk(getFuncStartEndListener, parseTree);
@@ -85,25 +84,27 @@ public class TokenGenerator {
         return getFuncStartEndListener;
     }
 
-    private void processFile(String path, Boolean flags,String testcaseID) throws ClassNotFoundException, IOException, InvocationTargetException, IllegalAccessException {
+    private void processFile(String path, List<Integer> flawLines, String testcaseID) throws ClassNotFoundException, IOException, InvocationTargetException, IllegalAccessException {
         GetFuncStartEndListener preProcessListener = preGenerate(path);
         ArrayList<FuncInfo> funcBeans = preProcessListener.getFuncInfos();
         CharStream input = CharStreams.fromFileName(path);
         Lexer lexer = new CPP14Lexer(input);
         List<Token> list = (List<Token>) lexer.getAllTokens();
         StringBuilder buf=new StringBuilder();
-        if(flags){
-            buf.append("1 ");
-        }else buf.append("0 ");
         for(FuncInfo funcInfo1 : funcBeans){
+            if(flawLines!=null && flawLines.size()>0){
+                if(flawLines.get(0)>=funcInfo1.getStartLine() && flawLines.get(0)<= funcInfo1.getEndLine()){
+                    buf.append("1 ");
+                }else buf.append("0 ");
+            }else buf.append("0 ");
             for (Token token : list){
                 if(token.getLine()>= funcInfo1.getStartLine()&& token.getLine()<= funcInfo1.getEndLine()&&token.getType()!=9){
                     buf.append(token.getText());
                     buf.append(" ");
                 }
             }
+            buf.append("\n");
         }
-        buf.append("\n");
         FileWriter outFile=new FileWriter(outputPath,true);
         outFile.write(buf.toString());
         outFile.flush();
@@ -119,7 +120,7 @@ public class TokenGenerator {
      * str[1]:结果文件输出路径
      */
     public static void main(String[] args) throws Exception {
-        String CWEID = "20";
+        String CWEID = "787";
         String basePath = "D:\\0x00\\sard_crawler\\dataset\\svf-related\\cwe\\CWE"+CWEID+"\\source-code\\";
         String outputPath = "D:\\0x00\\sard_crawler\\dataset\\svf-related\\token-raw\\CWE"+CWEID+"\\CWE"+CWEID+".txt";
 
